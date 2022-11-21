@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #3A3A3A;
+    color: white;
+}
+
+.header-menu{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.header-menu a{
+    color: white;
+    font-size: .9rem;
+}
+
+.header .entrar{
+    padding: 8px 15px;
+    border: 1px solid white;
+}
+
+.header .entrar:hover{
+    background-color: white;
+    color: #3A3A3A;
+}
+
+
+.header2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 100px;
+    background-color: #3A3A3A;
+    color: white;
+}
+
+.header-menu2{
+    color: white;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.header-menu2 a{
+    color: white;
+    font-size: .9rem;
+}
+
+
+@media(max-width:1050px){
+
+    .header2{
+        gap: 10px;
+        padding: 15px 5px;
+    }
+}
+
+@media(max-width:750px){
+
+    .header{
+        padding: 0 40px;
+    }
+
+    .header-menu{
+        gap: 20px;
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width:750px){
+
+    .header{
+        padding: 10px;
+    }
+
+    .header2{
+        display: none;
+    }
+}
+/*Introdução*/
+
+.introducao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    background-color:#3a3a3a18 ;
+    text-align: center;
+}
+
+
+.introducao h1{
+    font-size: 4rem;
+}
+.introducao h2{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.introducao .botao{
+    background-color: #3A3A3A;
+    color: white;
+    padding:  15px;
+    border-radius: 5px;
+}
+
+
+
+@media(max-width:970px){
+
+    .introducao h1{
+        font-size: 3rem;
+    }
+
+    .introducao h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .introducao .botao{
+        padding:  10px;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:670px){
+
+    .introducao{
+        gap: 5px;
+    }
+
+    .introducao h1{
+        font-size: 2rem;
+    }
+
+    .introducao h2{
+        font-size: .8rem;
+    }
+
+    .introducao .botao{
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:480px){
+    .introducao{
+        grid-template-columns: 1fr;
+        padding-top: 10px;
+    }
+
+    .introducao img{
+        margin-top: 30px; 
+    }
+}
+
+/***/
+
+.caixa1{
+    background-color:#3a3a3a18;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.caixa1 h1{
+    font-size: 2rem;
+}
+
+.caixa1 h1:before{
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 200px;
+    background-color: #3A3A3A;
+    margin-right: 20px;
+}
+
+.caixa1 h1:after{
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 200px;
+    background-color: #3A3A3A;
+    margin-left: 20px;
+}
+
+.hotel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.hotel .sombra{
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.479);
+    display: grid;
+    gap: 5px;
+    
+}
+
+
+
+@media(max-width:1300px){
+
+    .caixa1 h1{
+        padding-top: 60px;
+    }
+
+    .caixa1{
+        padding-top: 60px;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:900px){
+
+    .caixa1 h1{
+        font-size: 1.5rem;
+        padding-top: 60px;
+    }
+
+    .caixa1{
+        padding-top: 60px;
+        padding: 0 20px;
+    }
+
+    .hotel{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:700px){
+
+
+    .caixa1{
+        padding-top: 60px;
+        padding: 0 20px;
+    }
+
+    .hotel{
+        justify-content: center;
+    }
+
+    
+    .hotel img{
+        max-width: 300px;
+    }    
+}
+
+@media(max-width:600px){
+    .hotel{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hotel .sombra{
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+
+    .hotel img{
+        max-width: 100%;
+    }    
+}
+
+/***/
+
+.terceiro-conteudo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.terceiro-conteudo .sombra{
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.479);
+    display: grid;
+    gap: 5px;
+}
+
+
+@media(max-width:700px){
+
+    .terceiro-conteudo{
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 20px;
+    }
+}
+
+/**/
+
+.caixa2{
+    background-color: aliceblue;
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: justify;
+}
+
+.caixa2 h2{
+    padding-bottom: 40px;
+}
+
+.caixa2 .chegada{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+@media(max-width:700px){
+    .caixa2 .chegada{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 40px;  
+    }
+}
+
+/***/
+
+.caixa3{
+    background-color:#3a3a3a18;
+}
+
+.caixa3 h1{
+    text-align: center;
+    padding: 60px;
+}
+
+.caixa3 h1:before{
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 200px;
+    background-color: #3A3A3A;
+    margin-right: 20px;
+}
+
+.caixa3 h1:after{
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 200px;
+    background-color: #3A3A3A;
+    margin-left: 20px;
+}
+
+.avaliacao{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 60px;
+    
+}
+
+.hospede{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+@media(max-width:700px){
+
+    .avaliacao{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 10px;
+    }
+
+    .avaliacao p{
+        font-size: .9rem;
+    }
+}
+
+/**/
+
+footer{
+    text-align: center;
+    background-color: #3A3A3A;
+    color: aliceblue;
+}
